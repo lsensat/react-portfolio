@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import UserCard from './components/user_card.jsx'
+import ItemCard from './components/item_card.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +30,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      
+      <UserCard user={{ first_name: 'John', position: 'Developer', email: 'test@gmail.com' }} />
+      <ItemCard item={{ name: 'Sample Item', description: 'This is a sample item.' }} />
+      
     </>
   )
 }
