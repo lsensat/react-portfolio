@@ -30,9 +30,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      
-      <UserCard user={{ first_name: 'John', position: 'Developer', email: 'test@gmail.com' }} />
-      <ItemCard item={{ name: 'Sample Item', description: 'This is a sample item.' }} />
+
+      <UserCard user={{ picture: reactLogo, first_name: 'John', position: 'Developer', email: 'test@gmail.com' }} />
+      <ItemCard item={{ name: 'Sample Item', description: 'This is a sample item. But it can handle more, more than items that are just added to a cart' }} />
       
     </>
   )

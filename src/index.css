@@ -54,6 +54,61 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.user-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  
+  div {
+    margin-left: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    margin: 0;
+    text-align: left;
+  }
+  p {
+    padding-block: 0rem;
+    padding-left: 0.25rem;
+    margin-block: 0em;
+    text-align: left;
+    color: rgb(139, 139, 139);
+    font-style: italic;
+  }
+}
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: transparent;
+  margin-inline: 0rem;
+  margin-block: 0.5rem;
+  border: 1px solid rgb(130, 139, 139);
+  border-radius: 0.5rem;
+  position: relative;
+
+  button {
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0.25rem;
+  }
+
+  h3 {
+    margin-block: 0rem;
+  }
+
+  p {
+    text-align: left;
+    color: rgb(139, 139, 139);
+    margin-top: 0.5rem;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -64,5 +119,17 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (width <= 600px) {
+  .user-card {
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      margin-left: 0;
+      margin-top: 1rem;;
+    }
   }
 }
