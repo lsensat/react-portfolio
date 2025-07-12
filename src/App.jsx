@@ -32,7 +32,7 @@ function App() {
       </p>
 
       <UserCard user={{ picture: reactLogo, first_name: 'John', position: 'Developer', email: 'test@gmail.com' }} />
-      <ItemCard item={{ name: 'Sample Item', description: 'This is a sample item. But it can handle more, more than items that are just added to a cart' }} />
+      <ItemCard item={{ name: 'Sample Item', description: 'This is a sample item. But it can handle more, more than items that are just added to a cart.' }} />
       
     </>
   )
