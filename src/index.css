@@ -59,6 +59,9 @@ button:focus-visible {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+
+  .user-image {
+  }
   
   div {
     margin-left: 2rem;
@@ -97,16 +100,24 @@ button:focus-visible {
     bottom: 0.5rem;
     right: 0.5rem;
   }
-
+/* 
   h3 {
     margin-block: 0rem;
-  }
+  } */
 
   p {
     text-align: left;
     color: rgb(139, 139, 139);
     margin-top: 0.5rem;
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
+  }
+
+  .item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
   }
 }
 

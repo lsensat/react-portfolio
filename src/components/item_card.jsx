@@ -1,9 +1,11 @@
 export default function ItemCard({ item }) {
   return (
     <div className="item-card">
-      <h3>{item.name}</h3>
+      <div className="item-header">
+        <h3>{item.name}</h3>
+        <p>{item.date}</p>
+      </div>
       <p>{item.description}</p>
-      <button>Add</button>
     </div>
   );
 }
